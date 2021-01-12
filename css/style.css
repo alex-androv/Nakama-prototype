@@ -1,0 +1,354 @@
+:root {
+  --main-bg-color: #17142f;
+  --secondary-color: #fff;
+  --backdrop-color: #fff;
+  --info-blocks-color: #3f4550;
+  --additional-bg-color: #282c34;
+  --popup-color: #fff;
+  --accent-color: #0878FF;
+  --accent-dark-color: #086eeb;
+  --border-color: #eeeef4;
+  --text-color: #000;
+  --icon-color: #c0c4c9;
+  --ui-element-unactive-color: #91969b;
+  --alert-color: #fc4130;
+  --status-color1: #057DF5;
+  --status-color2: #5b36ac;
+  --status-color3: #d802d8;
+  --status-color4: #fec669;
+  --status-color4: #ffaa5f;
+  --status-color5: #06e4c6;
+  --status-color6: #36db78;
+  --status-color7: #ff1500;
+  --status-color8: #4e5df4;
+  --status-color9: #4754e9;
+
+}
+
+body {
+  background-color: white;
+  background-image: url(../img/bg-elements/bg-lines.svg);
+  background-position: cover;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1610px;
+  padding: 0 40px;
+}
+
+
+
+/* Main page */
+
+/* Header */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 30px 0;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  height: 30px;
+}
+
+.top-menu__list {
+  list-style: none;
+  display: flex;
+}
+
+.top-menu__list-item {
+  margin: 0 20px;
+}
+
+.top-menu__list-item-link {
+  font-size: 18px;
+}
+
+
+.top-menu__phone-wrapper {
+  height: 36px;
+  line-height: 36px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+
+.top-menu__phone-icon {
+  height: 34px;
+  width: 34px;
+  margin-right: 15px;
+}
+
+.top-menu__phone-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-email {
+  padding-bottom: 10px;
+  border-bottom: 4px solid var(--accent-color);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+/* Hero */
+
+.hero {
+  background-color: var(--main-bg-color);
+  position: relative;
+}
+
+.hero-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 220px 0 160px 0;
+  z-index: 10;
+}
+
+.cta-button {
+  display: flex;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 18px 20px;
+  font-size: 21px;
+  width: auto;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.cta-button:hover {
+  background-color: var(--accent-dark-color);
+}
+
+.hero-img-wrapper {
+  position: absolute;
+  top: 150px;
+  left: -5%;
+  width: 50%;
+  height: 800px;
+  z-index: 10;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero__content {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.hero__content-wrapper {
+  width: 100%;
+  color: #fff;
+  max-width: 580px;
+}
+
+.hero-heading {
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 1.4em;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.hero-heading--strong {
+  color: rgb(0, 255, 149);
+}
+
+.hero-sub-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 34px;
+  margin-bottom: 58px;
+}
+
+/* Форма с емейлом */
+.hero-cta-form {
+  display: flex;
+}
+
+.hero-cta-form__email {
+  width: 60%;
+  height: 58px;
+  padding-left: 20px;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 21px;
+  line-height: 25px;
+  color: #5D578A;
+  border: 0;
+  box-sizing: border-box;
+  padding-bottom: 1px;
+}
+
+.hero-cta-form__email:focus {
+  outline: none;
+}
+
+.hero-cta-form__submit-button {
+  width: 40%;
+  height: 58px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #0878FF;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  padding-bottom: 4px;
+}
+
+.hero-cta-form__submit-button:focus {
+  outline: none;
+}
+
+/* Технологии */
+.hero-technologies-wrapper {
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 80px;
+}
+
+.hero-technologies__heading {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero-technologies__images {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-technologies__img {
+  height: 38px;
+  margin-right: 30px;
+}
+
+.hero-technologies__img:last-child {
+  margin-right: 0;
+}
+
+/* HERO BACKGROUND ELEMENTS */
+.bg-element {
+  position: absolute;
+  z-index: 1;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.bg-element1 {
+  top: 0;
+  left: 0;
+  max-width: 60vw;
+  width: 60vw;
+}
+
+.bg-element2 {
+  bottom: 0;
+  right: 0;
+  max-width: 80vw;
+  width: 80vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Кто мы */
+.workflow-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 100px 40px;
+}
+
+.workflow-text {
+  width: 100%;
+  max-width: 850px;
+  font-size: 21px;
+  line-height: 2.2em;
+}
+
+
+
+
+
+/* О CRM */
+
+.about-crm {
+  position: relative;
+  height: 600px;
+
+}
+
+#about-crm__animated-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/bg-elements/ccrm-pattern.jpg);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: auto 100%;
+  /*adjustsvalueforspeed*/
+  animation: about-crm__animated-background 500s linear infinite;
+  -webkit-animation: about-crm__animated-background 300s linear infinite;
+}
+
+@keyframes about-crm__animated-background {
+  from {
+    background-position: 0 0;
+  }
+
+  /*use negative width if you want it to flow right to left else and positive for left to right*/
+  to {
+    background-position: -10000px 0;
+  }
+}
